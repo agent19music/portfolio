@@ -1,4 +1,4 @@
-# Hello, I'm [Sean Motanys] 👋
+# Hello, I'm [Sean Motanya] 👋
 
 I'm a Computer Science student with a passion for web development. I specialize in building applications using React.js for the frontend and Flask for the backend.
 
