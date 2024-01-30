@@ -1,12 +1,12 @@
 import BrowserRouter, { Route, Routes } from 'react-router-dom'
 import './App.css';
-
+import './Home'
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
       <Routes>
-        <Route path='/' element={<Portfolio />}/>
+        <Route path='/' element={<Home />}/>
       </Routes>
       </BrowserRouter>
      
