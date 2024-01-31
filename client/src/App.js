@@ -1,6 +1,6 @@
-import BrowserRouter, { Route, Routes } from 'react-router-dom'
+import { Route, Routes,BrowserRouter } from 'react-router-dom'
 import './App.css';
-import './Home'
+import Home from './Home.js'
 function App() {
   return (
     <div className="App">
