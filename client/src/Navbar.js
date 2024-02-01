@@ -24,6 +24,9 @@ export default function Navbar() {
               <a className="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li className="nav-item">
+              <a className="nav-link active" aria-current="page" href="#">About</a>
+            </li>
+            <li className="nav-item">
               <a className="nav-link" href="#">Link</a>
             </li>
             <li className="nav-item dropdown">
