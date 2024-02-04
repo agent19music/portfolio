@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
 
-export default function Navbar({ toggleDarkMode, toggle, toggle2}) {
+export default function Navbar({ toggleDarkMode, toggle, toggle2, toggle4}) {
   
   return (
     <div>
@@ -59,37 +59,9 @@ export default function Navbar({ toggleDarkMode, toggle, toggle2}) {
     <div className="d-flex align-items-center">
      
       <NavLink className="text-reset me-3 " to="/cart">
-        <i className="fas fa-sun" onClick={()=> toggleDarkMode()}></i>
+        <i className={`${toggle4}`} onClick={()=> toggleDarkMode()}></i>
       </NavLink>
 
-      
-      <div className="dropdown">
-        <Link
-          className="text-reset me-3 dropdown-toggle hidden-arrow "
-          to="#"
-          id="navbarDropdownMenuLink"
-          role="button"
-          data-mdb-toggle="dropdown"
-          aria-expanded="false"
-        >
-           <i className="fas fa-chevron-circle-down fa-lg"></i>
-           
-        </Link>
-        <ul
-          className="dropdown-menu dropdown-menu-end"
-          aria-labelledby="navbarDropdownMenuLink"
-        >
-          <li>
-            <Link className="dropdown-item" to="/addanimeform">Add new anime</Link>
-          </li>
-          <li>
-            <Link className="dropdown-item" onClick={()=> toggleDarkMode()} to="#">Toggle dark mode</Link>
-          </li>
-          <li>
-            <Link className="dropdown-item" to="/feedback">User reviews</Link>
-          </li>
-        </ul>
-      </div>
      
      
     </div>
