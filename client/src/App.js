@@ -16,7 +16,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
       <Routes>
-        <Route path='/' element={<Home toggleDarkMode={toggleDarkMode}/>}/>
+        <Route path='/' element={<Home toggleDarkMode={toggleDarkMode} toggle={toggle} toggle2={toggle2} toggle3={toggle3} toggle4={toggle4}/>}/>
       </Routes>
       </BrowserRouter>
      
