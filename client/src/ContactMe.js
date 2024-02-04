@@ -1,4 +1,5 @@
 import {React, useState} from 'react'
+import Swal from 'sweetalert2';
 
 export default function ContactMe({addFeedback}) {
     const [feedback, setFeedback] = useState('')

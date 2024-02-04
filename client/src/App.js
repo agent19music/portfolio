@@ -5,7 +5,26 @@ import {React, useState} from 'react'
 import ContactMe from './ContactMe.js';
 function App() {
 
+  const addFeedback = (comm) => {
+    fetch('', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(comm),
+    })
+      .then((response) => response.json())
+      .then((newFeedback) => {
+        
+        setFeedback([...feedback, newFeedback]);
+      })
+      .catch((error) => {
+        console.error('Error adding anime:', error);
+      });
+  };
+
   const [isDarkMode, setIsDarkMode] = useState(false);
+  const [feedback, setFeedback] = useState('')
     const toggleDarkMode = () => {
         setIsDarkMode(!isDarkMode);
     };
@@ -18,7 +37,7 @@ function App() {
       <BrowserRouter>
       <Routes>
         <Route path='/' element={<Home toggleDarkMode={toggleDarkMode} toggle={toggle} toggle2={toggle2} toggle3={toggle3} toggle4={toggle4}/>}/>
-        <Route path='/contact' element={<ContactMe/>}/>
+        <Route path='/contact' element={<ContactMe addFeedback={addFeedback}/>}/>
       </Routes>
       </BrowserRouter>
      
