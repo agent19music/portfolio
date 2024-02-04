@@ -13,7 +13,7 @@ function App() {
     const toggle3 = isDarkMode ? 'white': 'black'
     const toggle4 = isDarkMode ? 'fas fa-sun': 'fas fa-moon'
   return (
-    <div className="App">
+    <div className={toggle}>
       <BrowserRouter>
       <Routes>
         <Route path='/' element={<Home toggleDarkMode={toggleDarkMode} toggle={toggle} toggle2={toggle2} toggle3={toggle3} toggle4={toggle4}/>}/>
