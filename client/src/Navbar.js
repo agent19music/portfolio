@@ -45,7 +45,7 @@ export default function Navbar({ toggleDarkMode, toggle, toggle2, toggle4}) {
         </li>
         
         <li className="nav-item">
-          <Link className="nav-link" to="/contact">Contact Me</Link>
+        <a className="nav-link" href="#c-page">Contact Me</a>
         </li>
       </ul>
       

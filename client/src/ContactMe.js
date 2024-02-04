@@ -1,7 +1,7 @@
 import {React, useState} from 'react'
 import Swal from 'sweetalert2';
 
-export default function ContactMe({addFeedback}) {
+export default function ContactMe({addFeedback,toggle3}) {
     const [feedback, setFeedback] = useState('')
     const [email, setEmail] = useState('')
 
@@ -25,7 +25,7 @@ export default function ContactMe({addFeedback}) {
       <div className="">
         <form onSubmit={submitfeedback}>
           <div className="mb-3">
-            <label className="form-label text-white">Email</label>
+            <label className={`form-label text-${toggle3}`}>Email</label>
             <input
               type="email"
               value={''}
@@ -35,12 +35,12 @@ export default function ContactMe({addFeedback}) {
             />
           </div>
           <div className="mb-3">
-            <label className="form-label text-white">Message</label>
+            <label className={`form-label text-${toggle3}`}>Message</label>
             <textarea
               type="text"
               value=''
               onChange={(e) => setFeedback(e.target.value)}
-              className="form-control"
+              className="form-control h-200"
               required
             />
           </div>

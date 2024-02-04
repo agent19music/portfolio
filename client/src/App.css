@@ -1,4 +1,14 @@
+html{
+    scroll-behavior: smooth;
+}
 #page{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: #ddd9dcec; */
+}
+#c-page{
     min-height: 100vh;
     display: flex;
     justify-content: center;

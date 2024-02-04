@@ -33,8 +33,8 @@ export default function Home({toggleDarkMode, toggle, toggle2, toggle3, toggle4}
           
         </div>
       </section>  
-      <section id='page'>
-      <ContactMe/>
+      <section id='c-page'>
+      <ContactMe toggle3={toggle3}/>
       </section>
     </div>
     
