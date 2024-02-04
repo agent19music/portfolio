@@ -8,7 +8,7 @@ export default function Home({toggleDarkMode}) {
 
   return (
     <div>
-    <Navbar  toggleDarkMode={toggleDarkMode}/> 
+    <Navbar  toggleDarkMode={toggleDarkMode} toggle={toggle} toggle2={toggle2} toggle3={toggle3} toggle4={toggle4}/> 
     <section id='page'> 
       <div>
     <h4>
