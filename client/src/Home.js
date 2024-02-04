@@ -1,12 +1,15 @@
 import React from 'react'
 import Navbar from './Navbar'
 import {ReactTyped} from "react-typed";
+import './App.css'
 
 export default function Home() {
   return (
     <div>
-    <Navbar/>    
-    <h1>
+    <Navbar/> 
+    <section id='page'> 
+      <div>
+    <h4>
         {""}
         <ReactTyped
           strings={["Hello","Habari","こんにちは","Ng'aki Bono"]}
@@ -16,7 +19,12 @@ export default function Home() {
           cursorChar=">"
           showCursor={true}
         />
-      </h1>
+      </h4>
+      <h5> My Name is Sean Motanya</h5>
+      <h5>A full stack web developer</h5>
+      </div>
+      </section>  
     </div>
+    
   )
 }
