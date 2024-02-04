@@ -33,15 +33,15 @@ export default function Navbar({ toggleDarkMode, toggle, toggle2, toggle4}) {
     
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
         <li className="nav-item">
-          <Link className="nav-link" to="/">Home</Link>
+          <a className="nav-link" href="#page">Home</a>
         </li>
 
         <li className="nav-item">
-          <Link className="nav-link" to="/">About</Link>
+          <a className="nav-link" href="#a-page">About</a>
         </li>
 
         <li className="nav-item">
-          <Link className="nav-link" to="/">Projects</Link>
+          <a className="nav-link" href="#p-page">Projects</a>
         </li>
         
         <li className="nav-item">

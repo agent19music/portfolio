@@ -27,12 +27,17 @@ export default function Home({toggleDarkMode, toggle, toggle2, toggle3, toggle4}
       <h5>A full stack web developer</h5>
       </div>
       </section>
-      <section id='about-page'>
+
+      <section id='a-page'>
       <h4>ABOUT ME</h4>
         <div id='content'>
           
         </div>
       </section>  
+      <section>
+
+      </section>
+      
       <section id='c-page'>
       <ContactMe toggle3={toggle3}/>
       </section>
