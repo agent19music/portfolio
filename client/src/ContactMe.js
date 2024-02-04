@@ -1,8 +1,22 @@
 import {React, useState} from 'react'
 
-export default function ContactMe() {
+export default function ContactMe({addFeedback}) {
     const [feedback, setFeedback] = useState('')
     const [email, setEmail] = useState('')
+
+    const submitfeedback = (event) => {
+        event.preventDefault();
+        addFeedback({ email, feedback });
+        setEmail('');
+        Swal.fire({
+          position: "top-end",
+          icon: "success",
+          title: "Feedback sent successfully",
+          showConfirmButton: false,
+          timer: 900
+        });
+  
+      };
   return (
     <div className="container mt-5">
       <h4>CONTACT ME</h4>

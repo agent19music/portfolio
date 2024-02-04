@@ -2,6 +2,7 @@ import { Route, Routes,BrowserRouter } from 'react-router-dom'
 import './App.css';
 import Home from './Home.js'
 import {React, useState} from 'react'
+import ContactMe from './ContactMe.js';
 function App() {
 
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -17,6 +18,7 @@ function App() {
       <BrowserRouter>
       <Routes>
         <Route path='/' element={<Home toggleDarkMode={toggleDarkMode} toggle={toggle} toggle2={toggle2} toggle3={toggle3} toggle4={toggle4}/>}/>
+        <Route path='/contact' element={<ContactMe/>}/>
       </Routes>
       </BrowserRouter>
      
