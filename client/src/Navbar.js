@@ -39,9 +39,9 @@ export default function Navbar({ toggleDarkMode, toggle, toggle2}) {
         <li className="nav-item">
           <Link className="nav-link" to="/">About</Link>
         </li>
-        
+
         <li className="nav-item">
-          <Link className="nav-link" to="/">Home</Link>
+          <Link className="nav-link" to="/">Projects</Link>
         </li>
         
         <li className="nav-item">
