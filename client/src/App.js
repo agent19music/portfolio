@@ -36,8 +36,7 @@ function App() {
     <div className={toggle}>
       <BrowserRouter>
       <Routes>
-        <Route path='/' element={<Home toggleDarkMode={toggleDarkMode} toggle={toggle} toggle2={toggle2} toggle3={toggle3} toggle4={toggle4}/>}/>
-        <Route path='/contact' element={<ContactMe addFeedback={addFeedback}/>}/>
+        <Route path='/' element={<Home toggleDarkMode={toggleDarkMode} toggle={toggle} toggle2={toggle2} toggle3={toggle3} toggle4={toggle4} addFeedback={addFeedback}/>}/>
       </Routes>
       </BrowserRouter>
      

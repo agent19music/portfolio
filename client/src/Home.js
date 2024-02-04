@@ -2,6 +2,7 @@ import {React} from 'react'
 import Navbar from './Navbar'
 import {ReactTyped} from "react-typed";
 import './App.css'
+import ContactMe from './ContactMe';
 
 
 export default function Home({toggleDarkMode, toggle, toggle2, toggle3, toggle4}) {
@@ -32,6 +33,9 @@ export default function Home({toggleDarkMode, toggle, toggle2, toggle3, toggle4}
           
         </div>
       </section>  
+      <section id='page'>
+      <ContactMe/>
+      </section>
     </div>
     
   )
