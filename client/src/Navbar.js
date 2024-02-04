@@ -1,40 +1,103 @@
-import React from 'react';
+import React from 'react'
+import { Link, NavLink } from 'react-router-dom'
 
-export default function Navbar() {
+export default function Navbar({ toggleDarkMode, toggle, toggle2}) {
+  
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-body-tertiary">
-      <div className="container-fluid">
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-mdb-target="#navbarCenteredExample"
-          aria-controls="navbarCenteredExample"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <i className="fas fa-bars"></i>
-        </button>
+    <div>
+ <nav className={`navbar navbar-expand-lg navbar-${toggle2} ${toggle} fixed-top`}>
+  <div className="container-fluid">
+       <button
+      className="navbar-toggler"
+      type="button"
+      data-mdb-toggle="collapse"
+      data-mdb-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <i className="fas fa-bars"></i>
+    </button>
 
-        <div
-          className="collapse navbar-collapse justify-content-center"
-          id="navbarCenteredExample"
+   
+    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+     
+      <Link className="navbar-brand mt-2 mt-lg-0" to="#">
+        <img
+          src="/logo.png"
+          height="70"
+          alt="Logo"
+          
+        />
+      </Link>
+    
+      <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+        <li className="nav-item">
+          <Link className="nav-link" to="/">Home</Link>
+        </li>
+
+        <li className="nav-item">
+          <Link className="nav-link" to="/">About</Link>
+        </li>
+        
+        <li className="nav-item">
+          <Link className="nav-link" to="/">Home</Link>
+        </li>
+        
+        <li className="nav-item">
+          <Link className="nav-link" to="/contact">Contact Me</Link>
+        </li>
+      </ul>
+      
+    </div>
+    
+    <nav className="navbar navbar-light">
+ 
+</nav>
+
+    
+    <div className="d-flex align-items-center">
+     
+      <NavLink className="text-reset me-3 " to="/cart">
+        <i className="fas fa-sun" onClick={()=> toggleDarkMode()}></i>
+      </NavLink>
+
+      
+      <div className="dropdown">
+        <Link
+          className="text-reset me-3 dropdown-toggle hidden-arrow "
+          to="#"
+          id="navbarDropdownMenuLink"
+          role="button"
+          data-mdb-toggle="dropdown"
+          aria-expanded="false"
         >
-          <ul className="navbar-nav mb-2 mb-lg-0">
-            <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">About</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">Contact</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">Projects</a>
-            </li>
-          </ul>
-        </div>
+           <i className="fas fa-chevron-circle-down fa-lg"></i>
+           
+        </Link>
+        <ul
+          className="dropdown-menu dropdown-menu-end"
+          aria-labelledby="navbarDropdownMenuLink"
+        >
+          <li>
+            <Link className="dropdown-item" to="/addanimeform">Add new anime</Link>
+          </li>
+          <li>
+            <Link className="dropdown-item" onClick={()=> toggleDarkMode()} to="#">Toggle dark mode</Link>
+          </li>
+          <li>
+            <Link className="dropdown-item" to="/feedback">User reviews</Link>
+          </li>
+        </ul>
       </div>
-    </nav>
-  );
+     
+     
+    </div>
+   
+  </div>
+
+</nav>
+
+    </div>
+  )
 }

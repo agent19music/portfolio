@@ -1,12 +1,14 @@
-import React from 'react'
+import {React, useState} from 'react'
 import Navbar from './Navbar'
 import {ReactTyped} from "react-typed";
 import './App.css'
 
-export default function Home() {
+
+export default function Home({toggleDarkMode}) {
+
   return (
     <div>
-    <Navbar/> 
+    <Navbar  toggleDarkMode={toggleDarkMode}/> 
     <section id='page'> 
       <div>
     <h4>
@@ -23,6 +25,12 @@ export default function Home() {
       <h5> My Name is Sean Motanya</h5>
       <h5>A full stack web developer</h5>
       </div>
+      </section>
+      <section id='about-page'>
+      <h4>ABOUT ME</h4>
+        <div id='content'>
+          
+        </div>
       </section>  
     </div>
     
