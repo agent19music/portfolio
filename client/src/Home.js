@@ -4,7 +4,7 @@ import {ReactTyped} from "react-typed";
 import './App.css'
 
 
-export default function Home({toggleDarkMode}) {
+export default function Home({toggleDarkMode, toggle, toggle2, toggle3, toggle4}) {
 
   return (
     <div>

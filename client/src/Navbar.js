@@ -58,7 +58,7 @@ export default function Navbar({ toggleDarkMode, toggle, toggle2, toggle4}) {
     
     <div className="d-flex align-items-center">
      
-      <NavLink className="text-reset me-3 " to="/cart">
+      <NavLink className="text-reset me-3 " to="/">
         <i className={`${toggle4}`} onClick={()=> toggleDarkMode()}></i>
       </NavLink>
 
