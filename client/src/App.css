@@ -15,6 +15,20 @@ html{
     align-items: center;
     /* background: #ddd9dcec; */
 }
+#p-page{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: #ddd9dcec; */
+}
+#a-page{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: #ddd9dcec; */
+}
 #content{
     min-height: 100vh;
   display: grid;

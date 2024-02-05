@@ -29,15 +29,28 @@ export default function Home({toggleDarkMode, toggle, toggle2, toggle3, toggle4}
       </section>
 
       <section id='a-page'>
-      <h4>ABOUT ME</h4>
-        <div id='content'>
-          
+        <div id='content' className="container-lg mt-5 mb-5">
+        <h4>ABOUT ME</h4>
+        <div className="row">
+        <div className="col-lg-12 mb-4">
+          <div className="animate-in">
+            <img
+              src='her.jpg'
+              alt="my girlfriend"
+              width={324}
+              height={139}
+              className="img-fluid rounded-2xl shadow-md"
+              priority
+            />
+          </div>
+        </div>
+      </div>
         </div>
       </section>  
-      <section>
-
+      <section id='p-page'>
+       <h4>PROJECTS</h4>
       </section>
-      
+
       <section id='c-page'>
       <ContactMe toggle3={toggle3}/>
       </section>
