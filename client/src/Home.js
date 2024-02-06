@@ -11,7 +11,8 @@ export default function Home({toggleDarkMode, toggle, toggle2, toggle3, toggle4}
     <div>
     <Navbar  toggleDarkMode={toggleDarkMode} toggle={toggle} toggle2={toggle2} toggle3={toggle3} toggle4={toggle4}/> 
     <section id='page'> 
-      <div>
+    <div className='row justify-content-center align-items-center'>
+      <div className='col md-6'>
     <h4>
         {""}
         <ReactTyped
@@ -26,6 +27,11 @@ export default function Home({toggleDarkMode, toggle, toggle2, toggle3, toggle4}
       <h5> My Name is Sean Motanya</h5>
       <h5>A full stack web developer</h5>
       </div>
+      <div className='col md-6'>
+      <img src='https://w0.peakpx.com/wallpaper/511/174/HD-wallpaper-ichigo-kurosaki-glowing-eyes-male-ichigo-kurosaki-ichigo-cool-spiky-hair-anime-lone-dark-weapon-orange-hair-sword-red-eyes.jpg' alt='loading...' className='img-fluid' />
+
+      </div>
+      </div>
       </section>
 
       <section id='a-page'>
@@ -34,14 +40,14 @@ export default function Home({toggleDarkMode, toggle, toggle2, toggle3, toggle4}
         <div className="row">
         <div className="col-lg-12 mb-4">
           <div className="animate-in">
-            <img
+            {/* <img
               src='her.jpg'
               alt="my girlfriend"
               width={324}
               height={139}
               className="img-fluid rounded-2xl shadow-md"
               priority
-            />
+            /> */}
           </div>
         </div>
       </div>
