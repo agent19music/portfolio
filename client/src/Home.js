@@ -63,8 +63,21 @@ export default function Home({toggleDarkMode, toggle, toggle2, toggle3, toggle4}
       </div>
       
       <div className="card-body">
-        <a href="#" className="card-link"><i className="fab fa-github"></i></a>
-        <a href="#" className="card-link"><i className="fas fa-globe"></i></a>
+        <a href="" className="card-link"><i className="fab fa-github"></i></a>
+        <a href="https://anime-store-react.netlify.app/" className="card-link"><i className="fas fa-globe"></i></a>
+      </div>
+    </div> 
+
+    <div className="card" style={{width: '35%'}}>
+      <img src="/opentable.png" className="card-img-top" alt="open table"/>
+      <div className="card-body">
+        <h5 className="card-title">Open Table</h5>
+        <p className="card-text">A restaurant table booking website</p>
+      </div>
+      
+      <div className="card-body">
+        <a href="https://github.com/calebmutisya/OpenTable" className="card-link"><i className="fab fa-github"></i></a>
+        <a href="https://leafy-otter-831027.netlify.app/" className="card-link"><i className="fas fa-globe"></i></a>
       </div>
     </div> 
       </section>
