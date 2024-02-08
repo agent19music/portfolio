@@ -22,6 +22,15 @@ html{
     align-items: center;
     /* background: #ddd9dcec; */
 }
+.card-body a{
+text-decoration: none;
+color: black;
+}
+.card-body a:hover{
+    text-decoration: none;
+    color: orange;
+
+    }
 #a-page{
     /* min-height: 100vh; */
     display: flex;

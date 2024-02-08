@@ -52,7 +52,21 @@ export default function Home({toggleDarkMode, toggle, toggle2, toggle3, toggle4}
       </section>  
       <section id='p-page'>
        <h4>PROJECTS</h4>
-       
+       <div>
+       <CountUp className='fs-3' delay={1} end={12}duration={5} />
+       </div>
+       <div className="card" style={{width: '35%'}}>
+      <img src="/animestore.png" className="card-img-top" alt="anime store"/>
+      <div className="card-body">
+        <h5 className="card-title">Anime Store</h5>
+        <p className="card-text">A mock anime merchandise shopping website</p>
+      </div>
+      
+      <div className="card-body">
+        <a href="#" className="card-link"><i className="fab fa-github"></i></a>
+        <a href="#" className="card-link"><i className="fas fa-globe"></i></a>
+      </div>
+    </div> 
       </section>
 
       <section id='c-page'>
