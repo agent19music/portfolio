@@ -10,7 +10,8 @@ export default function Home({toggleDarkMode, toggle, toggle2, toggle3, toggle4}
   return (
     <div>
     <Navbar  toggleDarkMode={toggleDarkMode} toggle={toggle} toggle2={toggle2} toggle3={toggle3} toggle4={toggle4}/> 
-    <section id='page'> 
+    <section id='page'>
+      <div>
     <div className='row justify-content-center align-items-center'>
       <div className='col md-6'>
     <h4>
@@ -32,6 +33,12 @@ export default function Home({toggleDarkMode, toggle, toggle2, toggle3, toggle4}
 
       </div>
       </div>
+      <a href='CV.pdf' download='CV.pdf'>
+  <button type="button" className="btn btn-success btn-rounded">
+    Download CV
+  </button>
+</a>
+      </div> 
       </section>
 
       <section id='a-page'>
