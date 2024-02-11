@@ -38,8 +38,21 @@ color: black;
     align-items: center;
     /* background: #ddd9dcec; */
 }
+@media (max-width: 600px) {
+    #a-p {
+      font-size: 1rem;
+      
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      min-width: 100%;
+      overflow: auto;
+      max-height: 70%;
+      margin: 0;
+    }
+  }
 #content{
     min-height: 100vh;
+    padding: 0;
   /* display: grid;
   place-items: center; */
    max-width: 70%;

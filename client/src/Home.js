@@ -44,12 +44,12 @@ export default function Home({toggleDarkMode, toggle, toggle2, toggle3, toggle4}
 
 
       <section id='a-page'>
-        <div id='content' className="container-lg mt-5 mb-5 text-center">
+        <div id='content' className="container-lg mt-5 mb-5 text-center ">
         <h4>ABOUT ME</h4>
-        <div className="row justify-content-centre">
-        <div className="col-lg-12 mb-4">
+        <div className=" ">
+        <div className="col-md-6 mb-4">
           <div className="animate-in">
-         <p className='text-justify fs-3'>
+         <p className=' text-justify fs-3' id='a-p'>
           I am an experienced software engineer skilled in both frontend and backend  development with a focus on building user friendly applications that are easy to navigate and use.
           React.js, Flask, Next.js and Django are my tools of trade. I am currently a student pursuing my Bsc in Computer Science Bachelor's degree. When not coding I'm binging anime,
           listening to music, video editing or maybe asleep. Be sure to reach out for any queries or for any work/collaboration opportunities. Cheers.
