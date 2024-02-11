@@ -32,6 +32,7 @@ function App() {
     const toggle2 = isDarkMode ? 'dark':'light';
     const toggle3 = isDarkMode ? 'white': 'black'
     const toggle4 = isDarkMode ? 'fas fa-sun': 'fas fa-moon'
+    const toggle5 = isDarkMode ? 'animestore.png': 'animestoredark.png'
   return (
     <div className={toggle}>
       <BrowserRouter>
