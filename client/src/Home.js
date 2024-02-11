@@ -35,7 +35,7 @@ export default function Home({toggleDarkMode, toggle, toggle2, toggle3, toggle4}
       </div>
       <a href='CV.pdf' download='CV.pdf'>
   <button type="button" className="btn btn-success btn-rounded">
-    Download CV
+    Download My CV
   </button>
 </a>
       </div> 
@@ -58,35 +58,40 @@ export default function Home({toggleDarkMode, toggle, toggle2, toggle3, toggle4}
         </div>
       </section>  
       <section id='p-page'>
+        <div className="container-lg mt-5 mb-5 text-center">
        <h4>PROJECTS</h4>
-       <div>
-       <CountUp className='fs-3' delay={1} end={12}duration={5} />
-       </div>
-       <div className="card" style={{width: '35%'}}>
-      <img src="/animestore.png" className="card-img-top" alt="anime store"/>
-      <div className="card-body">
-        <h5 className="card-title">Anime Store</h5>
-        <p className="card-text">A mock anime merchandise shopping website</p>
+       <div class="container">
+  <div class="row g-3">
+    <div class="col-lg-6">
+      <div class="card h-100">
+        <img src="/animestore.png" class="card-img-top" alt="anime store"/>
+        <div class="card-body">
+          <h5 class="card-title">Anime Store</h5>
+          <p class="card-text">A mock anime merchandise shopping website</p>
+        </div>
+        <div class="card-body">
+          <a href="" class="card-link"><i class="fab fa-github"></i></a>
+          <a href="https://anime-store-react.netlify.app/" class="card-link"><i class="fas fa-globe"></i></a>
+        </div>
       </div>
-      
-      <div className="card-body">
-        <a href="" className="card-link"><i className="fab fa-github"></i></a>
-        <a href="https://anime-store-react.netlify.app/" className="card-link"><i className="fas fa-globe"></i></a>
+    </div>
+    <div class="col-lg-6">
+      <div class="card h-100">
+        <img src="/opentable.png" class="card-img-top" alt="open table"/>
+        <div class="card-body">
+          <h5 class="card-title">Open Table</h5>
+          <p class="card-text">A restaurant table booking website</p>
+        </div>
+        <div class="card-body">
+          <a href="https://github.com/calebmutisya/OpenTable" class="card-link"><i class="fab fa-github"></i></a>
+          <a href="https://leafy-otter-831027.netlify.app/" class="card-link"><i class="fas fa-globe"></i></a>
+        </div>
       </div>
-    </div> 
+    </div>
+  </div>
+</div>
 
-    <div className="card" style={{width: '35%'}}>
-      <img src="/opentable.png" className="card-img-top" alt="open table"/>
-      <div className="card-body">
-        <h5 className="card-title">Open Table</h5>
-        <p className="card-text">A restaurant table booking website</p>
-      </div>
-      
-      <div className="card-body">
-        <a href="https://github.com/calebmutisya/OpenTable" className="card-link"><i className="fab fa-github"></i></a>
-        <a href="https://leafy-otter-831027.netlify.app/" className="card-link"><i className="fas fa-globe"></i></a>
-      </div>
-    </div> 
+    </div>
       </section>
 
       <section id='c-page'>
