@@ -11,35 +11,37 @@ export default function Home({toggleDarkMode, toggle, toggle2, toggle3, toggle4}
     <div>
     <Navbar  toggleDarkMode={toggleDarkMode} toggle={toggle} toggle2={toggle2} toggle3={toggle3} toggle4={toggle4}/> 
     <section id='page'>
-      <div>
-    <div className='row justify-content-center align-items-center'>
-      <div className='col md-6'>
-    <h4>
-        {""}
-        <ReactTyped
-          strings={["Hello","Habari","こんにちは","Ng'aki Bono"]}
-          typeSpeed={100}
-          loop
-          backSpeed={20}
-          cursorChar=">"
-          showCursor={true}
-        />
-      </h4>
-      <h5> My Name is Sean Motanya</h5>
-      <h5>A full stack web developer</h5>
+  <div className='container'>
+    <div className='row justify-content-center align-items-center mb-3'>
+      <div className='col-md-6 pb-3'>
+        <h4>
+          {""}
+          <ReactTyped
+            strings={["Hello","Habari","こんにちは","Ng'aki Bono"]}
+            typeSpeed={100}
+            loop
+            backSpeed={20}
+            cursorChar=">"
+            showCursor={true}
+          />
+        </h4>
+        <h5> My Name is Sean Motanya</h5>
+        <h5>A full stack web developer</h5>
       </div>
-      <div className='col md-6'>
-      <img src='https://byliner.com/wp-content/uploads/2023/09/itachi-1-696x392.jpg'alt='loading...' className='img-fluid w-28 h-50' />
-
+      <div className='col-md-6 pb-3'>
+        <img src='https://byliner.com/wp-content/uploads/2023/09/itachi-1-696x392.jpg' alt='loading...' className='img-fluid w-28 h-50' />
       </div>
-      </div>
+    </div>
+    <div className='row justify-content-center'>
       <a href='CV.pdf' download='CV.pdf'>
-  <button type="button" className="btn btn-success btn-rounded">
-    Download My CV
-  </button>
-</a>
-      </div> 
-      </section>
+        <button type="button" className="btn btn-success btn-rounded">
+          Download My CV
+        </button>
+      </a>
+    </div>
+  </div>
+</section>
+
 
       <section id='a-page'>
         <div id='content' className="container-lg mt-5 mb-5 text-center">
