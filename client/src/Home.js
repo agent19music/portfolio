@@ -4,6 +4,7 @@ import {ReactTyped} from "react-typed";
 import './App.css'
 import ContactMe from './ContactMe';
 import CountUp from 'react-countup';
+import { ReactBurgerMenu } from 'react-burger-menu';
 
 export default function Home({toggleDarkMode, toggle, toggle2, toggle3, toggle4}) {
 
