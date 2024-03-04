@@ -56,6 +56,9 @@ export default function Home({toggleDarkMode, toggle, toggle2, toggle3, toggle4}
           listening to music, video editing or maybe asleep. Be sure to reach out for any queries or for any work/collaboration opportunities. Cheers.
          </p>
           </div>
+          <iframe style={{borderRadius: "12px"}} src="https://open.spotify.com/embed/track/0Gti54i0mUfipe9LQDsbGC?utm_source=generator&theme=0" width="100%" height="152" 
+frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
         </div>
       </div>
         </div>
